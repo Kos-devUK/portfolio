@@ -1,0 +1,421 @@
+/* 
+$space-cadet: rgba(34, 46, 80, 1);
+$cerulean: rgba(0, 121, 145, 1);
+$zomp: rgba(67, 154, 134, 1); 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
+
+
+
+@media (min-width:600px) and (max-width:1000px) {
+
+    .mediumScreen ul {
+
+        margin-bottom: 10px;
+        display: inline;
+    }
+
+    #welcome {
+        display: inline;
+    }
+
+    #skills {
+        display: block;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    border: 0%;
+    font-size: 21px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: rgba(67, 154, 134, 1);
+    color: rgba(34, 46, 80, 1);
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ----------------------------- Header !!!!! ------------------ */
+
+header {
+    position: sticky;
+    top: 1px;
+}
+
+
+#logo {
+    display: block;
+    width: 68.4px;
+    height: 60px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -2vw;
+    left: 28vw;
+    font-size: 18px;
+    list-style-type: none;
+    width: 40vw;
+
+}
+
+/* ------------------  Toggle button!!! ------------------ */
+#toggle {
+    display: block;
+    height: 10%;
+    width: 5%;
+    top: 6%;
+    background-color: rgb(7, 7, 7);
+    border-radius: 100px;
+    cursor: pointer;
+
+}
+
+#toggle::before {
+    background-color: rgb(241, 241, 241);
+    content: "";
+    height: 86%;
+    width: 43%;
+    left: 3%;
+    top: -60px;
+    border-radius: 50%;
+    transform: translateY(180%);
+    transition: all 0.5s ease-in-out;
+}
+
+#toggle.active::before {
+    left: calc(185% - 120px - 3%)
+}
+
+body.dark {
+    background-color: rgba(34, 46, 80, 1);
+    color: rgba(67, 154, 134, 1);
+
+}
+
+
+/* -------------- welcome box----------------- */
+
+#welcome {
+
+    margin-left: 445px;
+    margin-right: 445px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+/* ----------------Typewriter effect -------------  */
+@keyframes typing {
+
+    0%,
+    3% {
+        content: "";
+    }
+
+    3.1%,
+    6% {
+        content: "H";
+    }
+
+    6.1%,
+    9% {
+        content: "Hi";
+    }
+
+    9.1%,
+    12% {
+        content: "Hi,";
+    }
+
+    12.1%,
+    15% {
+        content: "Hi, ";
+    }
+
+    15.1%,
+    18% {
+        content: "Hi, m";
+    }
+
+    18.1%,
+    21% {
+        content: "Hi, my";
+    }
+
+    21.1%,
+    24% {
+        content: "Hi, my ";
+    }
+
+    24.1%,
+    27% {
+        content: "Hi, my n";
+    }
+
+    27.1%,
+    30% {
+        content: "Hi, my na";
+    }
+
+    30.1%,
+    33% {
+        content: "Hi, my nam";
+    }
+
+    33.1%,
+    36% {
+        content: "Hi, my name";
+    }
+
+    36.1%,
+    39% {
+        content: "Hi, my name ";
+    }
+
+    39.1%,
+    41% {
+        content: "Hi, my name i";
+    }
+
+    41.1%,
+    44% {
+        content: "Hi, my name is";
+    }
+
+    44.1%,
+    47% {
+        content: "Hi, my name is ";
+    }
+
+    47.1%,
+    50% {
+        content: "Hi, my name is K";
+    }
+
+    50.1%,
+    53% {
+        content: "Hi, my name is Ko";
+    }
+
+    53.1%,
+    56% {
+        content: "Hi, my name is Kos";
+    }
+
+    56.1%,
+    59% {
+        content: "Hi, my name is Kos";
+    }
+
+    59.1%,
+    62% {
+        content: "Hi, my name is Kos";
+    }
+
+    62.1%,
+    65% {
+        content: "Hi, my name is Kos";
+    }
+
+    65.1%,
+    68% {
+        content: "Hi, my name is Kos";
+    }
+
+    68.1%,
+    71% {
+        content: "Hi, my name is Ko";
+    }
+
+    71.1%,
+    74% {
+        content: "Hi, my name is K";
+    }
+
+    74.1%,
+    77% {
+        content: "Hi, my name";
+    }
+
+    77.1%,
+    80% {
+        content: "Hi, my nam";
+    }
+
+    80.1%,
+    83% {
+        content: "Hi, my n";
+    }
+
+    83.1%,
+    86% {
+        content: "Hi, my ";
+    }
+
+    86.1%,
+    89% {
+        content: "Hi, my";
+    }
+
+    89.1%,
+    91% {
+        content: "Hi, m";
+    }
+
+    91.1%,
+    93% {
+        content: "Hi,";
+    }
+
+    93.1%,
+    96% {
+        content: "H";
+    }
+
+    96.1%,
+    100% {
+        content: "";
+    }
+
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+#typewriter {
+    margin-bottom: -35px;
+    color: rgb(7, 80, 95);
+    --caret: currentcolor;
+}
+
+#typewriter::before {
+    content: "";
+    animation: typing 10s forwards infinite;
+}
+
+#typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 1s infinite;
+}
+
+/* ------------ Skills -------------------*/
+#allSkills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#developmentSkills {
+    margin-top: 24px;
+    margin-bottom: 75px;
+
+}
+
+#logoHTML {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+#logoCSS {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+#logoJS {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+#logoPython {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+
+}
+
+#logoDataBase {
+    width: 80px;
+    height: 80px;
+}
+
+#otherSkills {
+    margin-top: 4px;
+}
+
+#logoAbleton {
+    width: 70px;
+    height: 70px;
+    margin-right: 13px;
+}
+
+#logoKrita {
+    width: 70px;
+    height: 70px;
+    margin-right: 13px;
+}
+
+#logoGit {
+    width: 70px;
+    height: 70px;
+}
+
+/* --------------------About Me box-------------------- */
+#about {
+
+    margin-left: 345px;
+    margin-right: 345px;
+    margin-top: 8%;
+    margin-bottom: 13%;
+    padding: 15px;
+    padding-bottom: 40px;
+    border-radius: 25px;
+}
+
+
+/* --------------------Footer!!--------------- */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: -16vh;
+}
+
+#cname {}
+
+#footerLogos {}
+
+#githublogo {
+    width: 24px;
+    height: 24px;
+}
+
+#inlogo {
+    width: 24px;
+    height: 24px;
+}
