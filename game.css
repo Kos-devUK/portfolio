@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0pxs;
+    background-color: rgb(78, 141, 154);
+    text-align: center;
+}
+#logo {
+    display: block;
+    width: 68.4px;
+    height: 60px;
+    position: relative;
+    top: -65px;
+    left: 20px;
+}
+#countBugs{
+    font-size: 40px;
+    color: #b13f44;
+}
+button{
+    cursor: pointer;
+}
+#checkBtn{
+    display: flex;
+    position: relative;
+    margin-bottom: 50vh;
+}
+@keyframes lgmotion {
+    100%{
+    transform: rotate(360deg);
+   
+}
+    5% {
+    transform: rotate3d(12deg,60deg,55deg);
+
+}
+}
+/* ------   bug1  ----- */
+@keyframes move1  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn1Move{
+    position: relative;
+    animation-name: move1;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn1{
+    animation-name: lgmotion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: rgba(0, 121, 145, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* --------bug 2  --------  */
+
+@keyframes move2  {
+    0%   {left:2px; top:20px;}
+    75%  {left:21px; top:10px;}
+    100% {left:50px; top:30px;}
+  }
+
+#btn2Move{
+    position: relative;
+    animation-name: move2;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn2{animation-name: lgmotion;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    background-color: rgba(183, 192, 238, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/*  ------  bug 3 ---------- */
+
+@keyframes move3  {
+    0%   {left:-12px; bottom:20px;}
+    75%  {left:-21px; bottom:10px;}
+    100% {right:50px; bottom:30px;}
+  }
+
+#btn3Move{
+    position: relative;
+    animation-name: move3;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn3{animation-name: lgmotion;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-color: rgba(67, 154, 134, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+/* ------------  bug 4 --------- */
+@keyframes move4  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn4Move{
+    position: relative;
+    animation-name: move4;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+
+#btn4{animation-name: lgmotion;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    background-color: rgba(0, 121, 145, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 5 --------- */
+@keyframes move5  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn5Move{
+    position: relative;
+    animation-name: move5;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+
+#btn5{animation-name: lgmotion;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    background-color: rgba(183, 192, 238, 1);;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+/* ------------  bug 6 --------- */
+@keyframes move6  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn6Move{
+    position: relative;
+    animation-name: move6;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn6{animation-name: lgmotion;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    background-color: rgba(67, 154, 134, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 7 --------- */
+@keyframes move7  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn7Move{
+    position: relative;
+    animation-name: move7;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn7{animation-name: lgmotion;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-color: rgba(0, 121, 145, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 8 --------- */
+@keyframes move8  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn8Move{
+    position: relative;
+    animation-name: move8;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn8{animation-name: lgmotion;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    background-color: rgba(67, 154, 134, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 9 --------- */
+@keyframes move9  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn9Move{
+    position: relative;
+    animation-name: move9;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn9{animation-name: lgmotion;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background-color: rgba(0, 121, 145, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 10 --------- */
+@keyframes move10  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn10Move{
+    position: relative;
+    animation-name: move10;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn10{animation-name: lgmotion;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    background-color: rgba(67, 154, 134, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 11 --------- */
+@keyframes move11  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn11Move{
+    position: relative;
+    animation-name: move11;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn11{animation-name: lgmotion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: rgba(183, 192, 238, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 12 --------- */
+@keyframes move12  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn12Move{
+    position: relative;
+    animation-name: move12;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn12{animation-name: lgmotion;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    background-color: rgba(67, 154, 134, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 13 --------- */
+@keyframes move13  {
+    0%   {left:0px; top:0px;}
+    15%  {left:210px; top:200px;}
+    25%   {right: 120px; top: 2px;}
+    55%     {left: 120px top5px;}
+    100% {left:20px; top:10px;}
+  }
+
+#btn13Move{
+    position: relative;
+    animation-name: move13;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn13{animation-name: lgmotion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: #b13f44 ;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* ------------  bug 14 --------- */
+@keyframes move14  {
+    0%   {left:0px; top:0px;}
+    75%  {left:210px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#btn14Move{
+    position: relative;
+    animation-name: move14;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    transition: 1s ease-in-out;
+    
+}
+#btn14{animation-name: lgmotion;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    background-color: rgba(183, 192, 238, 1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------Footer!!--------------- */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: -16vh;
+}
+
+#cname {}
+
+#footerLogos {}
+
+#logoGithub {
+    width: 24px;
+    height: 24px;
+}
+
+#logoLinkedIn {
+    width: 24px;
+    height: 24px;
+}

@@ -2,6 +2,7 @@
 $space-cadet: rgba(34, 46, 80, 1);
 $cerulean: rgba(0, 121, 145, 1);
 $zomp: rgba(67, 154, 134, 1); 
+$Periwinkle rgba(183, 192, 238, 1);
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
@@ -11,14 +12,19 @@ $zomp: rgba(67, 154, 134, 1);
 @media (min-width:600px) and (max-width:1000px) {
 
     .mediumScreen ul {
-
         margin-bottom: 10px;
         display: inline;
     }
 
-    #welcome {
-        display: inline;
+    #body {
+        display: block;
     }
+
+    #navlist {
+        display: block;
+    }
+
+    #welcome {}
 
     #skills {
         display: block;
@@ -34,7 +40,7 @@ body {
     background-color: rgba(67, 154, 134, 1);
     color: rgba(34, 46, 80, 1);
     text-align: center;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 /* ----------------------------- Header !!!!! ------------------ */
@@ -42,8 +48,24 @@ body {
 header {
     position: sticky;
     top: 1px;
+    transition: background-color 1s ease-in-out ;
+}
+header.scrolled{
+    background-color: rgb(82, 153, 136);
+    box-shadow: 0 0 21px 2px rgb(169, 195, 246);
+    opacity: 0.85;
+    
 }
 
+header nav a { 
+    
+    transition: color 1s ease-in-out;
+
+}
+/* header.scrolled nav a {
+    color: rgb(255, 0, 17);
+
+} */
 
 #logo {
     display: block;
@@ -52,8 +74,6 @@ header {
     position: relative;
     top: 20px;
     left: 20px;
-
-
 }
 
 ul {
@@ -67,33 +87,37 @@ ul {
     width: 40vw;
 
 }
-
+.noDeco{
+    text-decoration: none;
+}
 /* ------------------  Toggle button!!! ------------------ */
 #toggle {
-    display: block;
-    height: 10%;
-    width: 5%;
-    top: 6%;
-    background-color: rgb(7, 7, 7);
+    position: absolute;
+    height: 35px;
+    width: 70px;
+    top: 3vh;
+    right: 27vw;
+    background-color: rgb(0, 0, 0);
     border-radius: 100px;
     cursor: pointer;
-
 }
 
 #toggle::before {
+    position: absolute;
     background-color: rgb(241, 241, 241);
     content: "";
-    height: 86%;
-    width: 43%;
-    left: 3%;
-    top: -60px;
-    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    top: -52px;
+    border-radius: 100%;
     transform: translateY(180%);
     transition: all 0.5s ease-in-out;
 }
 
 #toggle.active::before {
-    left: calc(185% - 120px - 3%)
+    left: calc(185% - 120px - 3%);
+    background-color: rgba(0, 121, 145, 1);
+
 }
 
 body.dark {
@@ -102,6 +126,31 @@ body.dark {
 
 }
 
+
+
+#bug {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 34px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+
+#bugOutline {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+
+#toggleEvent {
+    display: block;
+}
 
 /* -------------- welcome box----------------- */
 
@@ -125,167 +174,167 @@ body.dark {
 
     3.1%,
     6% {
-        content: "H";
+        content: "H ";
     }
 
     6.1%,
     9% {
-        content: "Hi";
+        content: "He ";
     }
 
     9.1%,
     12% {
-        content: "Hi,";
+        content: "Hel ";
     }
 
     12.1%,
     15% {
-        content: "Hi, ";
+        content: "Hell ";
     }
 
     15.1%,
     18% {
-        content: "Hi, m";
+        content: "Hello ";
     }
 
     18.1%,
     21% {
-        content: "Hi, my";
+        content: "Hello W ";
     }
 
     21.1%,
     24% {
-        content: "Hi, my ";
+        content: "Hello Wo ";
     }
 
     24.1%,
     27% {
-        content: "Hi, my n";
+        content: "Hello Wor ";
     }
 
     27.1%,
     30% {
-        content: "Hi, my na";
+        content: "Hello Worl ";
     }
 
     30.1%,
     33% {
-        content: "Hi, my nam";
+        content: "Hello World! ";
     }
 
     33.1%,
     36% {
-        content: "Hi, my name";
+        content: "Hello World! I ";
     }
 
     36.1%,
     39% {
-        content: "Hi, my name ";
+        content: "Hello World! I a ";
     }
 
     39.1%,
     41% {
-        content: "Hi, my name i";
+        content: "Hello World! I am ";
     }
 
     41.1%,
     44% {
-        content: "Hi, my name is";
+        content: "Hello World! I am K ";
     }
 
     44.1%,
     47% {
-        content: "Hi, my name is ";
+        content: "Hello World! I am Ko ";
     }
 
     47.1%,
     50% {
-        content: "Hi, my name is K";
+        content: "Hello World! I am Kos ";
     }
 
     50.1%,
     53% {
-        content: "Hi, my name is Ko";
+        content: "Hello World! I am Kos ";
     }
 
     53.1%,
     56% {
-        content: "Hi, my name is Kos";
+        content: "Hello World! I am Kos ";
     }
 
     56.1%,
     59% {
-        content: "Hi, my name is Kos";
+        content: "Hello World! I am Kos ";
     }
 
     59.1%,
     62% {
-        content: "Hi, my name is Kos";
+        content: "Hello World! I am Kos ";
     }
 
     62.1%,
     65% {
-        content: "Hi, my name is Kos";
+        content: "Hello World! I am Ko ";
     }
 
     65.1%,
     68% {
-        content: "Hi, my name is Kos";
+        content: "Hello World! I am K ";
     }
 
     68.1%,
     71% {
-        content: "Hi, my name is Ko";
+        content: "Hello World! I am  ";
     }
 
     71.1%,
     74% {
-        content: "Hi, my name is K";
+        content: "Hello World! I  ";
     }
 
     74.1%,
     77% {
-        content: "Hi, my name";
+        content: "Hello World!  ";
     }
 
     77.1%,
     80% {
-        content: "Hi, my nam";
+        content: "Hello World  ";
     }
 
     80.1%,
     83% {
-        content: "Hi, my n";
+        content: "Hello Worl ";
     }
 
     83.1%,
     86% {
-        content: "Hi, my ";
+        content: "Hello Wor ";
     }
 
     86.1%,
     89% {
-        content: "Hi, my";
+        content: "Hello Wo ";
     }
 
     89.1%,
     91% {
-        content: "Hi, m";
+        content: "Hello W ";
     }
 
     91.1%,
     93% {
-        content: "Hi,";
+        content: "Hello ";
     }
 
     93.1%,
     96% {
-        content: "H";
+        content: "Hel  ";
     }
 
     96.1%,
     100% {
-        content: "";
+        content: "  ";
     }
 
 }
@@ -319,74 +368,8 @@ body.dark {
     animation: blink 1s infinite;
 }
 
-/* ------------ Skills -------------------*/
-#allSkills {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-#developmentSkills {
-    margin-top: 24px;
-    margin-bottom: 75px;
-
-}
-
-#logoHTML {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-}
-
-#logoCSS {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-}
-
-#logoJS {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-}
-
-#logoPython {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-
-}
-
-#logoDataBase {
-    width: 80px;
-    height: 80px;
-}
-
-#otherSkills {
-    margin-top: 4px;
-}
-
-#logoAbleton {
-    width: 70px;
-    height: 70px;
-    margin-right: 13px;
-}
-
-#logoKrita {
-    width: 70px;
-    height: 70px;
-    margin-right: 13px;
-}
-
-#logoGit {
-    width: 70px;
-    height: 70px;
-}
-
 /* --------------------About Me box-------------------- */
 #about {
-
     margin-left: 345px;
     margin-right: 345px;
     margin-top: 8%;
@@ -396,6 +379,154 @@ body.dark {
     border-radius: 25px;
 }
 
+
+/* ------------ Skills -------------------*/
+#allSkills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#developmentSkills {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 75px;
+}
+
+#logoHTML {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+#textHTML p {
+    display: none;
+}
+
+#textHTML:hover p {
+    display: block;
+    margin-bottom: -50px;
+}
+
+#logoCSS {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+#textCSS p {
+    display: none;
+}
+
+#textCSS:hover p {
+    display: block;
+    margin-bottom: -50px;
+}
+
+#logoJS {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+#textJS p {
+    display: none;
+}
+
+#textJS:hover p {
+    display: block;
+    margin-bottom: -50px;
+}
+
+#logoPython {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+
+}
+
+#textPython p {
+    display: none;
+}
+
+#textPython:hover p {
+    display: block;
+    margin-bottom: -50px;
+}
+
+#logoDataBase {
+    width: 100px;
+    height: 100px;
+}
+
+#textDataBase p {
+    display: none;
+}
+
+#textDataBase:hover p {
+    display: block;
+    margin-bottom: -50px;
+}
+
+#otherSkills {
+    margin-top: 4px;
+    display: flex;
+    margin-bottom: 75px;
+}
+
+#logoAbleton {
+    width: 90px;
+    height: 90px;
+    margin-right: 23px;
+}
+
+#textAbleton p {
+    display: none;
+}
+
+#textAbleton:hover p {
+    display: block;
+    margin-bottom: -50px;
+}
+
+#logoKrita {
+    width: 90px;
+    height: 90px;
+    margin-right: 23px;
+}
+
+#textKrita p {
+    display: none;
+}
+
+#textKrita:hover p {
+    display: block;
+    margin-bottom: -50px;
+}
+
+#logoGit {
+    width: 90px;
+    height: 90px;
+}
+
+#textGit p {
+    display: none;
+}
+
+#textGit:hover p {
+    display: block;
+    margin-bottom: -50px;
+}
+
+/* ------------------------------- Projects ----------------- */
+#projects {
+    margin-bottom: 75px;
+}
+
+/* -------------- CV -------------------- */
+
+#myCV {}
 
 /* --------------------Footer!!--------------- */
 footer {
@@ -410,12 +541,12 @@ footer {
 
 #footerLogos {}
 
-#githublogo {
+#logoGithub {
     width: 24px;
     height: 24px;
 }
 
-#inlogo {
+#logoLinkedIn {
     width: 24px;
     height: 24px;
 }
