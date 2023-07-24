@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+/* font-family: 'Rubik Puddles', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
+/* font-family: 'Bai Jamjuree', sans-serif; */
+
+/* my colours   yellow-->rgb(242, 205, 96);
+                orange-->rgb(255, 82, 27);
+                blue-->rgb(15, 163, 177);      */
+
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    background-color: rgb(242, 205, 96);
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+}
+
+/* Bellow this is the header styling */
+h1 {
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: -15px;
+}
+
+@keyframes h1motion {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1:hover {
+    animation-name: h1motion;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+
+
+}
+
+header {
+    font-family: 'Rubik Puddles', cursive;
+    background-color: rgb(15, 163, 177);
+    text-align: center
+}
+
+#logo {
+    position: absolute;
+    left: -40px;
+    top: 8px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    animation-name: lgmotion;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lgmotion {
+    100% {
+        left: 1980px;
+        transform: rotate(360deg);
+        box-shadow: 13px 0px 15px 2px rgb(255, 82, 27);
+
+    }
+
+    0.5% {
+        left: -40px;
+    }
+}
+
+/* Bellow this is the Main Body styling  */
+h2 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: rgb(255, 82, 27);
+}
+
+h3,
+label,
+input {
+    color: rgb(15, 163, 177);
+    font-family: 'Bai Jamjuree', sans-serif;
+}

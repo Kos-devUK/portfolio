@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>survey</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+  <form>
+    <header>
+      <img src="images/logo.jpg" id="logo">
+      <h1>The Ghost</h1>
+      <h2 id="bgc">Board Games Cafe</h2>
+    </header>
+    <main>
+      <h3>Fill up the survey form and get a chance to win a board game</h3>
+      <div>
+        <h2>What is your favourite board game type?</h2>
+        <input type="radio" name="fbg">
+        <label for="jigsaw">jigsaw</label>
+        <input type="radio" name="fbg">
+        <label for="strategy">strategy</label>
+        <input type="radio" name="fbg">
+        <label for="role play">role play</label>
+        <input type="radio" name="fbg">
+        <label for="co-op">co-op</label>
+      </div>
+      <div>
+        <h2>What aspects do you enjoy most about playing board games?</h2>
+        <input type="checkbox" name="aspects">
+        <label for="check1">Challenges</label>
+        <input type="checkbox" name="aspects">
+        <label for="check1">Competitivness</label>
+        <input type="checkbox" name="aspects">
+        <label for="check1">Socialising</label>
+        <input type="checkbox" name="aspects">
+        <label for="check1">Family Time</label>
+        <input type="checkbox" name="aspects">
+        <label for="check1">Interactivity</label>
+        <input type="checkbox" name="aspects">
+        <label for="check1">Visuals and Feel</label>
+      </div>
+      <div>
+        <h2>With how many players do you enjoy most playing board games?</h2>
+        <input type="checkbox" name="bg">
+        <label for="check1">2 - 3</label>
+        <br>
+        <input type="checkbox" name="bg">
+        <label for="check1">3 - 4</label>
+        <br>
+        <input type="checkbox" name="bg">
+        <label for="check1">4 - 6</label>
+      </div>
+      <div>
+        <h2>Choose your favourite board game developer:</h2>
+        <label for="fbgd"></label>
+        <select name="fbgd">
+          <optgroup label="Jigsaw">
+            <option value="Clementoni">Clementoni</option>
+            <option value="Ravensburg">Ravensburg</option>
+          </optgroup>
+          <optgroup label="Strategy">
+            <option value="Space Cowboys">Space Cowboys</option>
+            <option value="Next Move">Next Move</option>
+          </optgroup>
+          <optgroup label="Role Play">
+            <option value="Catan Studio">Catan Studio</option>
+            <option value="Cluedo Studio">Cluedo Studio</option>
+          </optgroup>
+          <optgroup label="Co-Op">
+            <option value="Spirit Island">Spirit Island</option>
+            <option value="Z-man">Z-man</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <h2>Upload a receipt for a 10% discount</h2>
+        <input type="file">
+      </div>
+      <div>
+        <h2>Share your experience with other gamers</h2>
+        <input type="text" placeholder="Be part of the community!!!!" maxlength="100" size="60">
+      </div>
+    </main>
+    <br>
+    <footer>
+      <input type="reset">
+      <input type="submit">
+    </footer>
+  </form>
+
+</body>
+
+</html>

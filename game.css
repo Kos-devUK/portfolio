@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
 
+@media (min-width:320px) and (max-width:1000px) {
+
+.mediumSreen #allBugs{
+   
+}
+
+
+
+}
+
 body{
     font-family: 'Bai Jamjuree', sans-serif;
     box-sizing: border-box;
@@ -7,48 +17,66 @@ body{
     border: 0pxs;
     background-color: rgb(78, 141, 154);
     text-align: center;
+    cursor: url('imagesPortfolio/spray.cur'), auto;
 }
+
 #logo {
     display: block;
     width: 68.4px;
     height: 60px;
     position: relative;
-    top: -65px;
-    left: 20px;
+    top: -25px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#topHeader{
+    margin-bottom: -25px;
 }
 #countBugs{
     font-size: 40px;
     color: #b13f44;
 }
 button{
-    cursor: pointer;
+    cursor: url('imagesPortfolio/spray.cur'), auto;
+}
+#allBugs{
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 51vh;
+
 }
 #checkBtn{
     display: flex;
-    position: relative;
-    margin-bottom: 50vh;
+    
 }
+
 @keyframes lgmotion {
     100%{
     transform: rotate(360deg);
    
 }
-    5% {
+    0.5% {
     transform: rotate3d(12deg,60deg,55deg);
 
 }
 }
+
+
+
+
 /* ------   bug1  ----- */
 @keyframes move1  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:10vw; top:5vh;}
+    25%     {left:20vh; top:10vh;}
+    50%     {left:30vw; top:15vh}
+    75%     {left:40vh; top:25vh;}
+    100%    {left:20vw; top:20vh;}
   }
-
 #btn1Move{
     position: relative;
     animation-name: move1;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-duration: 15s;
     transition: 1s ease-in-out;
     
@@ -63,12 +91,15 @@ button{
     height: 90px;
 }
 
+
 /* --------bug 2  --------  */
 
 @keyframes move2  {
-    0%   {left:2px; top:20px;}
-    75%  {left:21px; top:10px;}
-    100% {left:50px; top:30px;}
+    0%      {left:-5vw; top:5vh;}
+    25%     {left:10vh; top:12vh;}
+    50%     {left:70vw; top:2vh}
+    75%     {left:20vh; top:25vh;}
+    100%    {left:10vw; top:20vh;}
   }
 
 #btn2Move{
@@ -91,9 +122,11 @@ button{
 /*  ------  bug 3 ---------- */
 
 @keyframes move3  {
-    0%   {left:-12px; bottom:20px;}
-    75%  {left:-21px; bottom:10px;}
-    100% {right:50px; bottom:30px;}
+    0%      {left:15vw; top:15vh;}
+    25%     {left:20vh; top:12vh;}
+    50%     {left:30vw; top:21vh}
+    75%     {left:40vh; top:25vh;}
+    100%    {left:52vw; top:20vh;}
   }
 
 #btn3Move{
@@ -114,9 +147,11 @@ button{
 }
 /* ------------  bug 4 --------- */
 @keyframes move4  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:15vw; top:15vh;}
+    25%     {left:20vh; top:12vh;}
+    50%     {left:30vw; top:1vh}
+    75%     {left:40vh; top:5vh;}
+    100%    {left:52vw; top:10vh;}
   }
 
 #btn4Move{
@@ -139,9 +174,11 @@ button{
 
 /* ------------  bug 5 --------- */
 @keyframes move5  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:0vw; top:0vh;}
+    25%     {left:21vh; top:30vh;}
+    50%     {left:75vw; top:-10vh}
+    75%     {left:46vh; top:40vh;}
+    100%    {left:50vw; top:45vh;}
   }
 
 #btn5Move{
@@ -149,7 +186,7 @@ button{
     animation-name: move5;
     animation-iteration-count: infinite;
     animation-duration: 15s;
-    transition: 1s ease-in-out;
+    transition: 0.1s ease-in-out;
     
 }
 
@@ -163,9 +200,11 @@ button{
 }
 /* ------------  bug 6 --------- */
 @keyframes move6  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:-15vw; top:-5vh;}
+    25%     {left:-20vh; top:1vh;}
+    50%     {left:-10vw; top:15vh}
+    75%     {left:0vh; top:20vh;}
+    100%    {left:-2vw; top:0vh;}
   }
 
 #btn6Move{
@@ -187,9 +226,11 @@ button{
 
 /* ------------  bug 7 --------- */
 @keyframes move7  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:15vw; top:0vh;}
+    25%     {left:20vh; top:5vh;}
+    50%     {left:30vw; top:11vh}
+    75%     {left:40vh; top:15vh;}
+    100%    {left:52vw; top:-2vh;}
   }
 
 #btn7Move{
@@ -211,11 +252,12 @@ button{
 
 /* ------------  bug 8 --------- */
 @keyframes move8  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:5vw; top:35vh;}
+    25%     {left:2vh; top:12vh;}
+    50%     {left:30vw; top:21vh}
+    75%     {left:4vh; top:25vh;}
+    100%    {left:2vw; top:20vh;}
   }
-
 #btn8Move{
     position: relative;
     animation-name: move8;
@@ -235,9 +277,11 @@ button{
 
 /* ------------  bug 9 --------- */
 @keyframes move9  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:15vw; top:15vh;}
+    25%     {left:20vh; top:12vh;}
+    50%     {left:-30vw; top:21vh}
+    75%     {left:40vh; top:-5vh;}
+    100%    {left:52vw; top:-1vh;}
   }
 
 #btn9Move{
@@ -259,9 +303,11 @@ button{
 
 /* ------------  bug 10 --------- */
 @keyframes move10  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:-15vw; top:15vh;}
+    25%     {left:0vh; top:12vh;}
+    50%     {left:-20vw; top:-1vh}
+    75%     {left:0vh; top:15vh;}
+    100%    {left:2vw; top:2vh;}
   }
 
 #btn10Move{
@@ -283,9 +329,11 @@ button{
 
 /* ------------  bug 11 --------- */
 @keyframes move11  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:5vw; top:1vh;}
+    25%     {left:-10vh; top:21vh;}
+    50%     {left:3vw; top:-1vh}
+    75%     {left:12vh; top:25vh;}
+    100%    {left:2vw; top:12vh;}
   }
 
 #btn11Move{
@@ -307,9 +355,11 @@ button{
 
 /* ------------  bug 12 --------- */
 @keyframes move12  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%      {left:15vw; top:15vh;}
+    25%     {left:0vh; top:2vh;}
+    50%     {left:-10vw; top:21vh}
+    75%     {left:40vh; top:-5vh;}
+    100%    {left:-2vw; top:0vh;}
   }
 
 #btn12Move{
@@ -329,24 +379,31 @@ button{
     height: 90px;
 }
 
-/* ------------  bug 13 --------- */
+/* ------------  bug 13  the lady bug !!!!! --------- */
 @keyframes move13  {
-    0%   {left:0px; top:0px;}
-    15%  {left:210px; top:200px;}
-    25%   {right: 120px; top: 2px;}
-    55%     {left: 120px top5px;}
-    100% {left:20px; top:10px;}
+    0%      {left:-15vw; top:15vh;}
+    10%     {left:-10vw; top:-15vh;}
+    25%     {left:0vh; top:2vh;}
+    30%     {left:10vw; top:21vh}
+    45%     {left:30vh; top:-5vh;}
+    55%     {left:-2vw; top:20vh;}
+    75%     {left:20vh; top:-2vh;}
+    85%     {left:-10vw; top:21vh}
+    95%     {left:40vh; top:-5vh;}
+    100%    {left:-2vw; top:10vh;}
   }
 
 #btn13Move{
     position: relative;
     animation-name: move13;
     animation-iteration-count: infinite;
-    animation-duration: 15s;
+    animation-duration: 10s;
     transition: 1s ease-in-out;
     
 }
-#btn13{animation-name: lgmotion;
+#btn13{
+
+    animation-name: lgmotion;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     background-color: #b13f44 ;
@@ -355,53 +412,26 @@ button{
     height: 90px;
 }
 
-/* ------------  bug 14 --------- */
-@keyframes move14  {
-    0%   {left:0px; top:0px;}
-    75%  {left:210px; top:200px;}
-    100% {left:0px; top:0px;}
-  }
-
-#btn14Move{
-    position: relative;
-    animation-name: move14;
-    animation-iteration-count: infinite;
-    animation-duration: 15s;
-    transition: 1s ease-in-out;
-    
-}
-#btn14{animation-name: lgmotion;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    background-color: rgba(183, 192, 238, 1);
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------Footer!!--------------- */
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    bottom: -16vh;
+#bottomBar{
+    width: 100%;
+    position: fixed;
+    bottom: 1vh;
+
+}
+#cname {
+    width: 220px;
+    left:10px;
 }
 
-#cname {}
+#footerLogos {
+    float: right;
+    width: 120px;
+}
 
-#footerLogos {}
+h6{
+    margin-bottom: -24px;
+}
 
 #logoGithub {
     width: 24px;

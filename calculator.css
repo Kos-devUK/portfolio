@@ -1,9 +1,5 @@
-/* 
-$space-cadet: rgba(34, 46, 80, 1);
-$cerulean: rgba(0, 121, 145, 1);
-$zomp: rgba(67, 154, 134, 1); 
-*/
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
@@ -11,10 +7,10 @@ $zomp: rgba(67, 154, 134, 1);
 .container {
     width: 100%;
     height: 100vh;
-    background-color: rgba(34, 46, 80, 1);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 
 .calculator {
@@ -22,7 +18,12 @@ $zomp: rgba(67, 154, 134, 1);
     padding: 20px;
     border-radius: 30px;
 }
-
+#backImage{
+    background-image: url(./imagesPortfolio/r&m.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
 .calculator form input {
     width: 60px;
     height: 60px;
@@ -31,21 +32,23 @@ $zomp: rgba(67, 154, 134, 1);
     margin: 10px;
     border-radius: 10px;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 29px;
     box-shadow: -8px -8px 15px gray, 8px 8px 15px gray;
     outline: 0px;
 }
 
 #textbox {
+    background-image: url(./imagesPortfolio/backCal2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     text-align: right;
-    background-color: rgb(183, 192, 238);
     height: 60px;
     outline: none;
     border: 0px;
     margin: 10px;
     border-radius: 10px;
-    color: rgb(177, 30, 94);
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
     width: 95%;
 }
 
