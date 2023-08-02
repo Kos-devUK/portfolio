@@ -16,6 +16,9 @@ body {
     margin: 0px;
     border: 0px;
 }
+html,body{
+    overflow-x: clip;
+}
 
 /* Bellow this is the header styling */
 h1 {
@@ -60,14 +63,14 @@ header {
 
 @keyframes lgmotion {
     100% {
-        left: 1980px;
+        left: 100%;
         transform: rotate(360deg);
         box-shadow: 13px 0px 15px 2px rgb(255, 82, 27);
 
     }
 
     0.5% {
-        left: -40px;
+        left: 0vw;
     }
 }
 

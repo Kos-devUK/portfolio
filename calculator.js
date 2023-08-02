@@ -1,6 +1,3 @@
-let audioTrig = document.getElementById("audioTrig");
-let audioSample = new Audio();
-
-audioTrig.addEventListener("", ()=>{
-    audioSample.play();
+document.getElementById("audioTrig").audioTrig.addEventListener('click', ()=>{
+    document.getElementById("audioSample").play();
 });

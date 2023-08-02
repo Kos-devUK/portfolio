@@ -9,7 +9,7 @@ $Periwinkle rgba(183, 192, 238, 1);
 
 /*  ------------------------ Responsive --------------------------    */
 
-@media (max-width:800px) and (min-width:320px)  {
+@media (max-width:1200px) and (min-width:359px)  {
    
     .smallScreen ul {
         margin-bottom: 10px;
@@ -34,26 +34,31 @@ $Periwinkle rgba(183, 192, 238, 1);
         display: inline;
         width: 50px;
     }
-    #aboutMeTxt{
-        position: relative;
-        top: 45px;
+    .picMQ{
+        top: 375px;   
+        max-width: 90px;
+        max-height: 90px;
+        display: block;
+        margin-left: 30px;
+
     }
-    #aboutTxt{
-        margin-top: 42%;
-    }
-    #profPic{
-        position: relative;
-        top: 550px;
-        
-    }
+
+   
     #toggle{
         position: relative;
         left: 50vw;
     
     }
+    
 }
 
+
 /*    ----------------------  HTML BODY !! -----------------*/
+
+html,body{
+    overflow-x: clip;
+}
+
 body {
     box-sizing: border-box;
     margin: 0%;
@@ -69,10 +74,10 @@ body {
 /* ----------------------------- Header !!!!! ------------------ */
 
 header {
+    z-index: 5;
     position: sticky;
     top: 1px;
-    transition: background-color 1s ease-in-out ;
-    
+    transition: background-color 1s ease-in-out ;    
 }
 header.scrolled{
     background-color: rgba(34, 46, 80, 1);
@@ -83,10 +88,14 @@ header.scrolled{
 header nav a { 
     transition: color 1s ease-in-out;
 }
- header.scrolled nav a {
-    color:  rgb(106, 121, 163);
+header.scrolled nav a { 
+    color:  rgb(169, 195, 246);
+}
+.dark header.scrolled { 
+    background-color: rgba(67, 154, 134, 1);
+    opacity: 0.65;
+}
 
-} 
 
 #logo {
     display: block;
@@ -144,10 +153,7 @@ ul {
 body.dark {
     background-color: rgba(34, 46, 80, 1);
     color: rgba(67, 154, 134, 1);
-
 }
-
-
 
 #bug {
     display: block;
@@ -176,6 +182,7 @@ body.dark {
 /* -------------- welcome box----------------- */
 
 #welcome {
+    display: inline;
     margin-left: 445px;
     margin-right: 445px;
     margin-top: 8%;
@@ -389,21 +396,28 @@ body.dark {
 }
 
 /* --------------------About Me box-------------------- */
-#about {    
+#about {   
+    display:inline; 
     margin-left: 345px;
     margin-right: 345px;
-    margin-bottom: 2%;
-    padding-bottom: 40px;
-    border-radius: 25px;
+    margin-bottom: -10px;
+
 }
-#profPic{
-    position:  absolute;
-    left: 122px;
+#profPic{  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    
+}
+#aboutTxt{
+    margin-top: 3%;}
 
+#aboutMeTxt{
+    margin-bottom: 3%;
 }
 
 /* ------------ Skills -------------------*/
@@ -520,6 +534,7 @@ body.dark {
 #logoKrita {
     width: 90px;
     height: 90px;
+    margin-right: 23px;
 }
 
 #textKrita p {
@@ -547,30 +562,33 @@ body.dark {
 
 /* ------------------------------- Projects ----------------- */
 #projects {
-    margin-bottom: 75px;
+    margin-bottom: 175px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    
 }
 
-#debug{
-    text-decoration: none;
-}
 #ProjCalc{
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 10%;
 }
 #ProjWeb{
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 10%;
 }
 #ProjDebug{
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 10%;
 }
-
+#pyProject{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+}
 /* -------------- CV -------------------- */
 
 #myCV:link {
@@ -595,14 +613,11 @@ footer {
     bottom: -16vh;
 }
 
-#cname {}
-
-#footerLogos {}
-
 #logoGithub {
     width: 24px;
     height: 24px;
 }
+
 #logoGithub #toggle{
     background-color: antiquewhite;
 }

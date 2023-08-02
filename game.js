@@ -22,13 +22,13 @@ let btn13 = document.getElementById("btn13");
 checkBtn.addEventListener('click', () => {
     countBugs.innerHTML = score;
     console.log('score')
-    while(score < 10){
+    while(score < 11){
         countBugs.innerHTML = score;
         score++
         console.log('score')
-        if (score == 10 ){
+        if (score == 11 ){
             console.log('win');
-            countBugs.innerHTML = `You eliminated all the bugs!!! press the logo to play again!!!`;  
+            countBugs.innerHTML = `You eliminated 10 bugs! Press the logo to play again!`;  
             score = 0;    
             }break;
     }     
@@ -81,4 +81,11 @@ btn13.addEventListener('click', () => {
     countBugs.innerHTML = [`oups! that was a ladybug -1 `];
     btn13.style.display = "none";
         
+})
+
+// --------------------  Reload ----------------
+
+let logo = document.getElementById("logo");
+logo.addEventListener('click', () => {
+    location.reload();
 })

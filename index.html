@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kos-dev</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="imagesPortfolio/logoico.ico" type="image/x-icon">
     <script src="script.js" defer></script>
 </head>
@@ -14,10 +14,10 @@
 
 <body>
     <header id="navColor">
-        <nav class="bigScreen smallScreen mediumScreen">
+        <nav class="smallScreen">
             <img src="imagesPortfolio/KOS DEV logo.png" alt="kosdevlogo" id="logo">
         </nav>
-        <nav class="bigScreen smallScreen mediumScreen" id="navlist">
+        <nav class="smallScreen" id="navlist">
             <ul>
                 <li><b> <a href="#about" class="noDeco">About</a> </b></li>
                 <li><b> <a href="#allSkills" class="noDeco">Skills</a></b></li>
@@ -26,18 +26,15 @@
                 <li><b><a href="mailto:kostiskonst@gmail.com" class="noDeco">Contact</a> </b></li>
             </ul>
         </nav>
-        <nav class="bigScreen smallScreen mediumScreen" id="toggleEvent">
+        <nav class="smallScreen" id="toggleEvent">
             <article id="toggle">
                 <img src="imagesPortfolio/bug-outline.svg" alt="bug-outline" id="bugOutline">
                 <img src="imagesPortfolio/bug.svg" alt="bug" id="bug">
             </article>
         </nav>
     </header>
-
-
-    <main class="bigScreen smallScreen mediumScreen">
-
-
+    
+    <main class="smallScreen">
         <article>
             <aside id="welcome">
                 <h2 id="typewriter"></h2> <br>
@@ -46,8 +43,8 @@
         </article>
 
         <article  id="about">      
-            <h1 id="aboutMeTxt">About &nbsp;Me</h1>
-            <img src="imagesPortfolio/ProfPic.jpg" alt="profilepic" id="profPic">
+            <h1 id="aboutMeTxt">About Me</h1>
+            <img src="imagesPortfolio/ProfPic.jpg" alt="profilepic" id="profPic" class="picMQ">
             <h3 id="aboutTxt">Hiya! I am Konstantinos 'Kos' Konstantinidis <br> Junior Fullstack Developer based in London, UK.<br>
             I recently completed a  three month Software Development Bootcamp <br> where I gained my fundamental skills.</h3>
             <h5 id="">My interest in web development started a year ago, when I decided to follow a course at freecodecamp.
@@ -107,35 +104,34 @@
 
         
         <article>
-        <h2>Projects</h2>
-            <article id="projects">
-                <article id="calculator">
-                    <h4> Calculator <br>Rick & Morty themed calculator</h4> <br>
+            <h2>Projects</h2>
+            <article  id="projects">
+                <article >
+                    <h4>Calculator<br>Rick & Morty calculator</h4><br>
                     <a href="calculator.html">
                     <img src="imagesPortfolio/ProjCalc.png" alt="project calculator" id="ProjCalc"></a>
                 </article>
-
-                <article id="theGhost">
-                    <h4>Website Project <br>board games café <br>the Ghost </h4>
+                <article>
+                    <h4>Website Project<br>Board games café</h4><br>
                     <a href="theGhost.html">
                     <img src="imagesPortfolio/ProjWeb.png" alt="ProjWeb" id="ProjWeb"></a>
                 </article>
-
-                <article id="debug"><h4>Debug<br>
-                    a click game  </h4> <br>
+                <article>
+                    <h4>Debug<br>Click game</h4><br>
                     <a href="game.html"><img src="imagesPortfolio/ProjDebug.png" alt="ProjDebug" id="ProjDebug"></a>
+                </article>
+                <article>
+                    <h4>Python project<br>Board games library</h4><br>
+                    <a href="pyproject.html"><img src="imagesPortfolio/pyProjectImg.png" alt="Pyproject" id="pyProject"></a>
                 </article>
             </article>
         </article>
-        
-
         <article>
             <h2>My CV</h2>
-            <a href="CV Kos Konstantinidis.pdf" download="Kos Konstantinidis CV"  id="myCV"><button id="buttonCV">
+            <a href="Konstantinos Kos Konstantinidis CV.pdf" download="Kos Konstantinidis CV"  id="myCV"><button id="buttonCV">
             <b>Download my CV</b></a></button>
         </article>
     </main>
-
 
     <footer>
         <article id="cname">

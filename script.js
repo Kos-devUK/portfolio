@@ -20,5 +20,4 @@ document.addEventListener('scroll', () =>{
         } else{
             header.classList.remove('scrolled');
         }
-
 })
