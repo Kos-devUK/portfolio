@@ -1,22 +1,20 @@
-/* 
-$space-cadet: rgba(34, 46, 80, 1);
-$cerulean: rgba(0, 121, 145, 1);
-$zomp: rgba(67, 154, 134, 1); 
-$Periwinkle rgba(183, 192, 238, 1);
-*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&family=Handjet&family=Inconsolata:wght@600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
 
 /*  ------------------------ Responsive --------------------------    */
-
-@media (max-width:1200px) and (min-width:359px)  {
-   
+@media (max-width:739px) and (min-width:319px){
+    #developmentSkills{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:1200px) and (min-width:319px)  {
     .smallScreen ul {
         margin-bottom: 10px;
         display: block;
     }
     #welcome{
-       display: inline;
+    display: inline;
     }
     
     #about{
@@ -30,10 +28,6 @@ $Periwinkle rgba(183, 192, 238, 1);
         flex-direction: column;
 
     }
-    #developmentSkills img{
-        display: inline;
-        width: 50px;
-    }
     .picMQ{
         top: 375px;   
         max-width: 90px;
@@ -41,13 +35,6 @@ $Periwinkle rgba(183, 192, 238, 1);
         display: block;
         margin-left: 30px;
 
-    }
-
-   
-    #toggle{
-        position: relative;
-        left: 50vw;
-    
     }
     
 }
@@ -64,8 +51,8 @@ body {
     margin: 0%;
     border: 0%;
     font-size: 21px;
-    font-family: 'Bai Jamjuree', sans-serif;
-    background-color: rgba(67, 154, 134, 1);
+    font-family:'Inconsolata', monospace ;
+    background-color:#d4d4d4;
     color: rgba(34, 46, 80, 1);
     text-align: center;
     transition: all 0.3s ease-in-out;
@@ -74,23 +61,25 @@ body {
 /* ----------------------------- Header !!!!! ------------------ */
 
 header {
-    z-index: 5;
+    background:  #ff0081;
     position: sticky;
     top: 1px;
-    transition: background-color 1s ease-in-out ;    
+    transition: background-color 1s ease-in-out ;
+    border-radius: 0 0 5% 5% / 0 0 15% 15% ;
 }
+
 header.scrolled{
-    background-color: rgba(34, 46, 80, 1);
-    box-shadow: 0 0 21px 2px rgb(169, 195, 246);
+    box-shadow: 0 0 21px 2px #ff0081;
     opacity: 0.85;
+    color: #000000;
 }
 
 header nav a { 
     transition: color 1s ease-in-out;
 }
-header.scrolled nav a { 
+/* header.scrolled nav a { 
     color:  rgb(169, 195, 246);
-}
+} */
 .dark header.scrolled { 
     background-color: rgba(67, 154, 134, 1);
     opacity: 0.65;
@@ -152,7 +141,7 @@ ul {
 
 body.dark {
     background-color: rgba(34, 46, 80, 1);
-    color: rgba(67, 154, 134, 1);
+    color: rgb(234, 238, 237);
 }
 
 #bug {
@@ -180,15 +169,30 @@ body.dark {
 }
 
 /* -------------- welcome box----------------- */
+#top{
+    margin-top: -2%;
+}
+#topSection{
+    overflow: hidden;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(0deg,#6827b0, #ff0081);
+    box-shadow: 0 0 21px 2px rgb(84, 53, 99);
+    border-radius: 0 0 5% 5% / 0 0  15% 15% ;
+    
+}
+#topSection article{
+    z-index: 1;
+}
+
 
 #welcome {
     display: inline;
-    margin-left: 445px;
-    margin-right: 445px;
-    margin-top: 8%;
-    margin-bottom: 1%;
-    padding: 10px;
-    border-radius: 25px;
+    position: relative;
+    top: 100px;
 }
 
 /* ----------------Typewriter effect -------------  */
@@ -382,6 +386,7 @@ body.dark {
     margin-bottom: -35px;
     color: rgb(7, 80, 95);
     --caret: currentcolor;
+    font-family: 'Handjet', cursive;
 }
 
 #typewriter::before {
@@ -396,12 +401,10 @@ body.dark {
 }
 
 /* --------------------About Me box-------------------- */
-#about {   
-    display:inline; 
-    margin-left: 345px;
-    margin-right: 345px;
-    margin-bottom: -10px;
-
+#aboutSection{   
+    display:inline-block; 
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 #profPic{  
     display: block;
@@ -412,6 +415,7 @@ body.dark {
     width: 150px;
     height: 150px;
     border-radius: 100%;
+    box-shadow: 0 0 21px 2px rgb(73, 74, 74);
 }
 #aboutTxt{
     margin-top: 3%;}
@@ -420,24 +424,59 @@ body.dark {
     margin-bottom: 3%;
 }
 
-/* ------------ Skills -------------------*/
-#allSkills {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+/* ---------------- scroll to top button ----------------- */
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: linear-gradient(5deg,#6827b0, #ff0081);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    opacity: 70%;
 }
 
+#myBtn:hover {
+    background-color: #000000;
+}
+
+
+/* ------------ Skills -------------------*/
+#allSkills{
+    height: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#devSection{
+    height: 2%;
+    border-radius: 5% 5% 5% 5% / 15% 15% 15% 15% ;
+    box-shadow: 0 0 21px 2px rgb(73, 74, 74);
+    padding:  2%;
+    width: 90%;
+    
+}
 
 #developmentSkills {
     display: flex;
+    justify-content: center;
     margin-top: 24px;
     margin-bottom: 75px;
+    
 }
 
 #logoHTML {
-    width: 100px;
-    height: 100px;
-    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    margin-right: 23px;
 }
 
 #textHTML p {
@@ -450,9 +489,9 @@ body.dark {
 }
 
 #logoCSS {
-    width: 100px;
-    height: 100px;
-    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    margin-right: 23px;
 }
 
 #textCSS p {
@@ -465,9 +504,9 @@ body.dark {
 }
 
 #logoJS {
-    width: 100px;
-    height: 100px;
-    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    margin-right: 23px;
 }
 
 #textJS p {
@@ -480,9 +519,9 @@ body.dark {
 }
 
 #logoDataBase {
-    width: 100px;
-    height: 100px;
-    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    margin-right: 23px;
 }
 
 #textDataBase p {
@@ -495,12 +534,14 @@ body.dark {
 }
 
 #logoPython {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    margin-right: 23px;
 }
 
 #textPython p {
     display: none;
+    margin-bottom: -50px;
 }
 
 #textPython:hover p {
@@ -509,11 +550,19 @@ body.dark {
 }
 
 
+#otherSkillsSection{
+    height: 2%;
+    border-radius: 5% 5% 5% 5% / 15% 15% 15% 15% ;
+    box-shadow: 0 0 21px 2px rgb(73, 74, 74);
+    padding:  2%;
+    margin-top: 5%;
+    width: 90%;
+}
 
 #otherSkills {
-    margin-top: 4px;
     display: flex;
-    margin-bottom: 75px;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 #logoAbleton {
@@ -558,35 +607,51 @@ body.dark {
 #textGit:hover p {
     display: block;
     margin-bottom: -50px;
+    margin-right: 23px;
 }
 
+
+/* ----------------- logos motion --------------  */
+
+.allLogos:hover{
+    animation: loader 2s infinite;
+
+}
+@keyframes loader {
+    0% {
+    rotate: 0deg;
+    }
+    100% {
+    rotate: 180deg;
+    }
+}
 /* ------------------------------- Projects ----------------- */
+#allProjects{
+    height: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 #projects {
-    margin-bottom: 175px;
+    margin-bottom: 17px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+#projectsSection{
     
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 2%;
+    padding: 2%;
+    width: 90%;
+    border-radius: 5% 5% 5% 5% / 15% 15% 15% 15% ;
+    box-shadow: 0 0 21px 2px rgb(73, 74, 74);
 }
 
-#ProjCalc{
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
-}
-#ProjWeb{
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
-}
-#ProjDebug{
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
-}
-#pyProject{
-    width: 300px;
-    height: 300px;
+.projectSize{
+    width: 150px;
+    height: 150px;
     border-radius: 10%;
 }
 /* -------------- CV -------------------- */
@@ -597,12 +662,21 @@ body.dark {
 }
 
 #buttonCV{
-    width: 200px;
-    height: 60px;
-    background-color: rgba(0, 121, 145, 1);
+    border: none;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 21px 2px rgb(87, 104, 104);
+    border-radius: 60% 5% 50% 5%/ 75% 75% 75% 75%;
+    font-family:'Inconsolata';
+    background: linear-gradient(5deg,#6827b0, #ff0081);
+    color: antiquewhite;
     font-size: 18px;
-    border-radius: 5%;  
 }
+#cvSection{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 
 /* --------------------Footer!!--------------- */
 footer {
@@ -610,7 +684,8 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    bottom: -16vh;
+    border-radius: 5% 5% 0 0/ 15% 15% 0 0;
+    background: linear-gradient(200deg,#ff0081 ,#6827b0);
 }
 
 #logoGithub {
@@ -618,11 +693,37 @@ footer {
     height: 24px;
 }
 
-#logoGithub #toggle{
-    background-color: antiquewhite;
-}
-
 #logoLinkedIn {
     width: 24px;
     height: 24px;
+}
+
+/*  ------------- transition ------------------------ */
+section{
+    place-items: center;
+    align-content: center;
+    min-height: 100%;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 3s;
+}
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }

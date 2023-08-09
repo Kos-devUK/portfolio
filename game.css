@@ -108,6 +108,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 
@@ -136,6 +137,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /*  ------  bug 3 ---------- */
@@ -163,6 +165,7 @@ button{
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    border: none;
 }
 /* ------------  bug 4 --------- */
 @keyframes move4  {
@@ -189,6 +192,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* ------------  bug 5 --------- */
@@ -216,6 +220,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 /* ------------  bug 6 --------- */
 @keyframes move6  {
@@ -241,6 +246,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* ------------  bug 7 --------- */
@@ -267,6 +273,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* ------------  bug 8 --------- */
@@ -292,6 +299,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* ------------  bug 9 --------- */
@@ -318,6 +326,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* ------------  bug 10 --------- */
@@ -344,6 +353,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* ------------  bug 11 --------- */
@@ -370,6 +380,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* ------------  bug 12 --------- */
@@ -396,6 +407,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* ------------  bug 13  the lady bug !!!!! --------- */
@@ -429,6 +441,7 @@ button{
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    border: none;
 }
 
 /* --------------------Footer!!--------------- */

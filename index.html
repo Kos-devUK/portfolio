@@ -13,124 +13,138 @@
 
 
 <body>
-    <header id="navColor">
-        <nav class="smallScreen">
+    <header id="top">
+            <nav class="smallScreen">
             <img src="imagesPortfolio/KOS DEV logo.png" alt="kosdevlogo" id="logo">
-        </nav>
-        <nav class="smallScreen" id="navlist">
+            </na>
+            <nav class="smallScreen" id="navlist">
             <ul>
                 <li><b> <a href="#about" class="noDeco">About</a> </b></li>
                 <li><b> <a href="#allSkills" class="noDeco">Skills</a></b></li>
                 <li><b> <a href="#projects" class="noDeco">Projects</a></b></li>
                 <li><b> <a href="#myCV" class="noDeco">My CV</a></b></li>
-                <li><b><a href="mailto:kostiskonst@gmail.com" class="noDeco">Contact</a> </b></li>
-            </ul>
-        </nav>
-        <nav class="smallScreen" id="toggleEvent">
-            <article id="toggle">
+                <li><b><a href="mailto:kostiskonst@gmail.com" class="noDeco">Contact Me</a> </b></li>
+                </ul>
+            </nav>
+            <nav class="smallScreen" id="toggleEvent">
+                <article id="toggle">
                 <img src="imagesPortfolio/bug-outline.svg" alt="bug-outline" id="bugOutline">
                 <img src="imagesPortfolio/bug.svg" alt="bug" id="bug">
-            </article>
-        </nav>
+                </article>
+            </nav>
     </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
     
     <main class="smallScreen">
-        <article>
+
+        <section id="topSection">
+            <article class="hidden2" class="curvedEffect">
             <aside id="welcome">
                 <h2 id="typewriter"></h2> <br>
-                <h2>Junior Fullstack Developer</h2>
+                <h2>A Junior Fullstack Developer</h2>
             </aside>
-        </article>
-
-        <article  id="about">      
-            <h1 id="aboutMeTxt">About Me</h1>
-            <img src="imagesPortfolio/ProfPic.jpg" alt="profilepic" id="profPic" class="picMQ">
-            <h3 id="aboutTxt">Hiya! I am Konstantinos 'Kos' Konstantinidis <br> Junior Fullstack Developer based in London, UK.<br>
-            I recently completed a  three month Software Development Bootcamp <br> where I gained my fundamental skills.</h3>
-            <h5 id="">My interest in web development started a year ago, when I decided to follow a course at freecodecamp.
-                <br> Studying alongside working and following some other online tutorials and reading sources, <br>
-                    I've decided to attend a bootcamp.....knowledge... <br>
-                    and gain confidence...... to involve with the industry.
-            </h5>
-        </article>
-
-
-
-        <article id="allSkills">
-            <article>
-                <h2>Development Skills</h2>
             </article>
-            <article id="developmentSkills">
+        </section>
+        
+
+        <section class="hidden">
+            <section  id="aboutSection">      
+                <h1 id="aboutMeTxt">About Me</h1>
+                <img src="imagesPortfolio/ProfPic.jpg" alt="profilepic" id="profPic" class="picMQ">
+                <h3 id="aboutTxt">Hiya! <br> I am Konstantinos 'Kos' Konstantinidis. <br> A Junior Fullstack Developer based in London, UK.<br>
+                    I am a graduate of Just IT's Software Development Bootcamp <br>where I gained my fundamental coding skills.</h3>
+                <h4 id="">My interest in software development started a year ago, when I decided to follow a course at freecodecamp.
+                <br> Alongside working, I would study using other online tutorials and reading sources. <br>
+                    I decided to attend a bootcamp to establish knowledge, gain confidence, <br>
+                    step into the industry and expand my network.</h4>
+            </section>
+        </section>
+
+        <section id="allSkills">
+        <section id="devSection">
+                <h2>Development Skills</h2>
+            <article id="developmentSkills" class="hidden2">
                 <article id="textHTML">
-                    <img src="imagesPortfolio/logoHTML.png" alt="html" id="logoHTML">
+                    <img src="imagesPortfolio/logoHTML.png" alt="html" id="logoHTML" class="allLogos">
                     <p>HTML 5</p>
                 </article>
                 <article id="textCSS">
-                    <img src="imagesPortfolio/logoCSS.png" alt="css" id="logoCSS">
+                    <img src="imagesPortfolio/logoCSS.png" alt="css" id="logoCSS" class="allLogos">
                     <p>CSS</p>
                 </article>
                 <article id="textJS">
-                    <img src="imagesPortfolio/logoJS.png" alt="js" id="logoJS">
+                    <img src="imagesPortfolio/logoJS.png" alt="js" id="logoJS" class="allLogos">
                     <p>JavaScript</p>
                 </article>
                 <article id="textDataBase">
-                    <img src="imagesPortfolio/logoDataBase.png" alt="database" id="logoDataBase">
+                    <img src="imagesPortfolio/logoDataBase.png" alt="database" id="logoDataBase" class="allLogos">
                     <p>mySQL</p>
                 </article>
                 <article id="textPython">
-                    <img src="imagesPortfolio/logoPython.png" alt="python" id="logoPython">
+                    <img src="imagesPortfolio/logoPython.png" alt="python" id="logoPython" class="allLogos">
                     <p>Python</p>
                 </article>
             </article>
+        </section>
 
-            <article>
-                <h2>Audio Design and Tools Skills</h2>
-            </article>
-            <article id="otherSkills">
-                <aside id="textAbleton">
-                    <img src="imagesPortfolio/logoAbleton.png" alt="ableton" id="logoAbleton">
+    
+        <section id="otherSkillsSection">
+                <h2>Audio Design & Tools Skills</h2>
+            <article id="otherSkills" class="hidden">
+                <article id="textAbleton">
+                    <img src="imagesPortfolio/logoAbleton.png" alt="ableton" id="logoAbleton" class="allLogos">
                     <p>Ableton</p>
-                </aside>
-                <aside id="textKrita">
-                    <img src="imagesPortfolio/logoKrita.png" alt="krita" id="logoKrita">
+                </article>
+                <article id="textKrita">
+                    <img src="imagesPortfolio/logoKrita.png" alt="krita" id="logoKrita" class="allLogos">
                     <p>Krita</p>
-                </aside>
-                <aside id="textGit">
-                    <img src="imagesPortfolio/logoGit.png" alt="git" id="logoGit">
+                </article>
+                <article id="textGit">
+                    <img src="imagesPortfolio/logoGit.png" alt="git" id="logoGit" class="allLogos">
                     <p>GitHub</p>
-                </aside>
+                </article>
             </article>
-        </article>
+        </section>
+    </section>
 
-        
-        <article>
+
+        <section id="allProjects">
+        <section id="projectsSection">
             <h2>Projects</h2>
-            <article  id="projects">
-                <article >
-                    <h4>Calculator<br>Rick & Morty calculator</h4><br>
-                    <a href="calculator.html">
-                    <img src="imagesPortfolio/ProjCalc.png" alt="project calculator" id="ProjCalc"></a>
-                </article>
+            <article  id="projects" class="hidden2">
                 <article>
-                    <h4>Website Project<br>Board games café</h4><br>
+                    <h4>Board Game Café<br>Website</h4><br>
                     <a href="theGhost.html">
-                    <img src="imagesPortfolio/ProjWeb.png" alt="ProjWeb" id="ProjWeb"></a>
+                    <img src="imagesPortfolio/ProjWeb.png" alt="ProjWeb" class="projectSize"></a>
+                    <h5>Web design project for the bootcamp.<br>The website was designed and created to provide <br> visitors with information about the cafe and ways to connect.<br>HTML, CSS and JavaScript were used.</h5>
                 </article>
                 <article>
-                    <h4>Debug<br>Click game</h4><br>
-                    <a href="game.html"><img src="imagesPortfolio/ProjDebug.png" alt="ProjDebug" id="ProjDebug"></a>
+                    <h4>Rick & Morty<br>Calculator</h4><br>
+                    <a href="calculator.html">
+                    <img src="imagesPortfolio/ProjCalc.png" alt="project calculator" class="projectSize"></a>
+                    <h5>A javascript project.<br>This fun calculator performs advanced <br> arithmetic operations with numbers.<br>It was built with HTML & CSS.</h5>
                 </article>
                 <article>
-                    <h4>Python project<br>Board games library</h4><br>
-                    <a href="pyproject.html"><img src="imagesPortfolio/pyProjectImg.png" alt="Pyproject" id="pyProject"></a>
+                    <h4>Debug<br>Click Game</h4><br>
+                    <a href="game.html"><img src="imagesPortfolio/ProjDebug.png" alt="ProjDebug" class="projectSize"></a>
+                    <h5>A JavaScript assignment.<br>It is for entertainment purposes <br>inviting you to 'squash pesky bugs'.<br>It was built using the languages HTML, CSS and JavaScript.</h5>
+                </article>
+                <article>
+                    <h4>Board Games Library<br>Python project</h4><br>
+                    <a href="pyproject.html"><img src="imagesPortfolio/pyProjectImg.png" alt="Pyproject" class="projectSize"></a>
+                    <h5>A task demonstrating C.R.U.D. functionality.<br>The library manages data within a software application.<br>Python was used to implement this project.</h5>
                 </article>
             </article>
-        </article>
-        <article>
+        </section>
+        </section>
+
+
+        <section class="hidden" id="cvSection">
             <h2>My CV</h2>
-            <a href="Konstantinos Kos Konstantinidis CV.pdf" download="Kos Konstantinidis CV"  id="myCV"><button id="buttonCV">
-            <b>Download my CV</b></a></button>
-        </article>
+            <a href="Konstantinos Kos Konstantinidis CV.pdf" download="Kos_Konstantinidis_CV"  id="myCV"><button id="buttonCV">
+            <b>Download Now</b></a></button>
+        </section>
     </main>
 
     <footer>
