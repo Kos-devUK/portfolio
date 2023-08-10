@@ -7,6 +7,30 @@
         display: flex;
         flex-direction: column;
     }
+    #textHTML:hover .removeTxt {
+        display: none;
+        }
+    #textCSS:hover .removeTxt {
+        display: none;
+        }
+    #textJS:hover .removeTxt {
+        display: none;
+        }
+    #textDataBase:hover .removeTxt {
+        display: none;
+        }
+    #textPython:hover .removeTxt {
+        display: none;
+        }
+    #textAbleton:hover .removeTxt {
+        display: none;
+        }
+    #textKrita:hover .removeTxt {
+        display: none;
+        }
+    #textGit:hover .removeTxt {
+    display: none;
+    }
 }
 @media (max-width:1200px) and (min-width:319px)  {
     .smallScreen ul {
@@ -61,6 +85,7 @@ body {
 /* ----------------------------- Header !!!!! ------------------ */
 
 header {
+    z-index: 99;
     background:  #ff0081;
     position: sticky;
     top: 1px;
@@ -71,17 +96,15 @@ header {
 header.scrolled{
     box-shadow: 0 0 21px 2px #ff0081;
     opacity: 0.85;
-    color: #000000;
 }
 
 header nav a { 
     transition: color 1s ease-in-out;
+    color: #000000;
 }
-/* header.scrolled nav a { 
-    color:  rgb(169, 195, 246);
-} */
+
 .dark header.scrolled { 
-    background-color: rgba(67, 154, 134, 1);
+    background-color: #ff0081;;
     opacity: 0.65;
 }
 
@@ -123,7 +146,7 @@ ul {
 
 #toggle::before {
     position: absolute;
-    background-color: rgb(241, 241, 241);
+    background-color: antiquewhite;
     content: "";
     height: 30px;
     width: 30px;
@@ -135,12 +158,12 @@ ul {
 
 #toggle.active::before {
     left: calc(185% - 120px - 3%);
-    background-color: rgba(0, 121, 145, 1);
+    background-color:antiquewhite;
 
 }
 
 body.dark {
-    background-color: rgba(34, 46, 80, 1);
+    background-color: rgb(59, 73, 110);
     color: rgb(234, 238, 237);
 }
 
@@ -170,7 +193,7 @@ body.dark {
 
 /* -------------- welcome box----------------- */
 #top{
-    margin-top: -2%;
+    margin-top: -7%;
 }
 #topSection{
     overflow: hidden;
@@ -192,7 +215,7 @@ body.dark {
 #welcome {
     display: inline;
     position: relative;
-    top: 100px;
+    top: 130px;
 }
 
 /* ----------------Typewriter effect -------------  */
@@ -384,7 +407,7 @@ body.dark {
 
 #typewriter { 
     margin-bottom: -35px;
-    color: rgb(7, 80, 95);
+    color: #00FF7E;
     --caret: currentcolor;
     font-family: 'Handjet', cursive;
 }
@@ -399,12 +422,14 @@ body.dark {
     border-right: 1px solid var(--caret);
     animation: blink 1s infinite;
 }
-
+#topText{
+    color: #97D84F;
+}
 /* --------------------About Me box-------------------- */
 #aboutSection{   
     display:inline-block; 
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
 }
 #profPic{  
     display: block;
@@ -417,11 +442,8 @@ body.dark {
     border-radius: 100%;
     box-shadow: 0 0 21px 2px rgb(73, 74, 74);
 }
-#aboutTxt{
-    margin-top: 3%;}
-
-#aboutMeTxt{
-    margin-bottom: 3%;
+.dark #profPic{
+    box-shadow: 0 0 21px 2px rgb(208, 206, 206);
 }
 
 /* ---------------- scroll to top button ----------------- */
@@ -448,6 +470,55 @@ body.dark {
     background-color: #000000;
 }
 
+.dark #myBtn{
+    box-shadow: 0 0 21px 2px rgb(234, 222, 222);
+}
+/* --------------- get in touch button --------------  */
+
+#getSection{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+#getBtn {
+    cursor: pointer;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #fe2893 ;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    transition: all .5s ease;
+    font-family:'Inconsolata';
+}
+
+#getBtn:hover {
+    letter-spacing: 3px;
+    background-color: #6827b0;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.dark #getBtn:hover {
+    letter-spacing: 3px;
+    background-color: wheat;
+    color: #430e80;
+}
+.dark #getBtn{
+    box-shadow: 0 0 21px 2px rgb(221, 215, 215);
+}
+
+
+#getBtn:active {
+    letter-spacing: 3px;
+    background-color: #6827b0;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
 
 /* ------------ Skills -------------------*/
 #allSkills{
@@ -460,9 +531,13 @@ body.dark {
     height: 2%;
     border-radius: 5% 5% 5% 5% / 15% 15% 15% 15% ;
     box-shadow: 0 0 21px 2px rgb(73, 74, 74);
-    padding:  2%;
+    padding: 2%;
     width: 90%;
     
+}
+.dark #devSection{
+    box-shadow: 0 0 21px 2px rgb(221, 215, 215);
+    background-color: rgb(89, 103, 141);
 }
 
 #developmentSkills {
@@ -559,6 +634,11 @@ body.dark {
     width: 90%;
 }
 
+.dark #otherSkillsSection{
+    box-shadow: 0 0 21px 2px rgb(221, 215, 215);
+    background-color: rgb(89, 103, 141);
+}
+
 #otherSkills {
     display: flex;
     justify-content: center;
@@ -607,24 +687,10 @@ body.dark {
 #textGit:hover p {
     display: block;
     margin-bottom: -50px;
-    margin-right: 23px;
-}
-
-
-/* ----------------- logos motion --------------  */
-
-.allLogos:hover{
-    animation: loader 2s infinite;
 
 }
-@keyframes loader {
-    0% {
-    rotate: 0deg;
-    }
-    100% {
-    rotate: 180deg;
-    }
-}
+
+
 /* ------------------------------- Projects ----------------- */
 #allProjects{
     height: 2%;
@@ -647,6 +713,10 @@ body.dark {
     width: 90%;
     border-radius: 5% 5% 5% 5% / 15% 15% 15% 15% ;
     box-shadow: 0 0 21px 2px rgb(73, 74, 74);
+}
+.dark #projectsSection{
+    box-shadow: 0 0 21px 2px rgb(221, 215, 215);
+    background-color: rgb(89, 103, 141);
 }
 
 .projectSize{
@@ -673,8 +743,12 @@ body.dark {
     font-size: 18px;
 }
 #cvSection{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 7.5%;
+}
+
+.dark #buttonCV{
+    box-shadow: 0 0 21px 2px rgb(221, 215, 215);
 }
 
 
@@ -727,3 +801,4 @@ section{
     filter: blur(0);
     transform: translateX(0);
 }
+

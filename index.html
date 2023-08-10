@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kos-dev</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagesPortfolio/logoico.ico" type="image/x-icon">
     <script src="script.js" defer></script>
 </head>
@@ -33,22 +33,21 @@
                 </article>
             </nav>
     </header>
-
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
     
     <main class="smallScreen">
 
         <section id="topSection">
-            <article class="hidden2" class="curvedEffect">
+            <article class="curvedEffect">
             <aside id="welcome">
                 <h2 id="typewriter"></h2> <br>
-                <h2>A Junior Fullstack Developer</h2>
+                <h2 id="topText">A Junior Fullstack Developer</h2>
             </aside>
             </article>
         </section>
         
 
-        <section class="hidden">
+        <section>
             <section  id="aboutSection">      
                 <h1 id="aboutMeTxt">About Me</h1>
                 <img src="imagesPortfolio/ProfPic.jpg" alt="profilepic" id="profPic" class="picMQ">
@@ -61,48 +60,51 @@
             </section>
         </section>
 
-        <section id="allSkills">
+        <section id="getSection">
+            <a href="mailto:kostiskonst@gmail.com"><button id="getBtn">get in touch</button></a>
+        </section>
+
+    <section id="allSkills">
         <section id="devSection">
                 <h2>Development Skills</h2>
             <article id="developmentSkills" class="hidden2">
-                <article id="textHTML">
-                    <img src="imagesPortfolio/logoHTML.png" alt="html" id="logoHTML" class="allLogos">
-                    <p>HTML 5</p>
+                <article id="textHTML" class="hoverTxt">
+                    <img src="imagesPortfolio/logoHTML.png" alt="html" id="logoHTML">
+                    <p class="removeTxt">HTML 5</p>
                 </article>
                 <article id="textCSS">
-                    <img src="imagesPortfolio/logoCSS.png" alt="css" id="logoCSS" class="allLogos">
-                    <p>CSS</p>
+                    <img src="imagesPortfolio/logoCSS.png" alt="css" id="logoCSS">
+                    <p class="removeTxt">CSS</p>
                 </article>
                 <article id="textJS">
-                    <img src="imagesPortfolio/logoJS.png" alt="js" id="logoJS" class="allLogos">
-                    <p>JavaScript</p>
+                    <img src="imagesPortfolio/logoJS.png" alt="js" id="logoJS">
+                    <p class="removeTxt">JavaScript</p>
                 </article>
                 <article id="textDataBase">
-                    <img src="imagesPortfolio/logoDataBase.png" alt="database" id="logoDataBase" class="allLogos">
-                    <p>mySQL</p>
+                    <img src="imagesPortfolio/logoDataBase.png" alt="database" id="logoDataBase">
+                    <p class="removeTxt">mySQL</p>
                 </article>
                 <article id="textPython">
-                    <img src="imagesPortfolio/logoPython.png" alt="python" id="logoPython" class="allLogos">
-                    <p>Python</p>
+                    <img src="imagesPortfolio/logoPython.png" alt="python" id="logoPython">
+                    <p class="removeTxt">Python</p>
                 </article>
             </article>
         </section>
 
-    
         <section id="otherSkillsSection">
                 <h2>Audio Design & Tools Skills</h2>
             <article id="otherSkills" class="hidden">
                 <article id="textAbleton">
-                    <img src="imagesPortfolio/logoAbleton.png" alt="ableton" id="logoAbleton" class="allLogos">
-                    <p>Ableton</p>
+                    <img src="imagesPortfolio/logoAbleton.png" alt="ableton" id="logoAbleton">
+                    <p class="removeTxt">Ableton</p>
                 </article>
                 <article id="textKrita">
-                    <img src="imagesPortfolio/logoKrita.png" alt="krita" id="logoKrita" class="allLogos">
-                    <p>Krita</p>
+                    <img src="imagesPortfolio/logoKrita.png" alt="krita" id="logoKrita">
+                    <p class="removeTxt">Krita</p>
                 </article>
                 <article id="textGit">
-                    <img src="imagesPortfolio/logoGit.png" alt="git" id="logoGit" class="allLogos">
-                    <p>GitHub</p>
+                    <img src="imagesPortfolio/logoGit.png" alt="git" id="logoGit">
+                    <p class="removeTxt">GitHub</p>
                 </article>
             </article>
         </section>
@@ -112,25 +114,25 @@
         <section id="allProjects">
         <section id="projectsSection">
             <h2>Projects</h2>
-            <article  id="projects" class="hidden2">
-                <article>
+            <article  id="projects">
+                <article class="hidden2">
                     <h4>Board Game Café<br>Website</h4><br>
                     <a href="theGhost.html">
                     <img src="imagesPortfolio/ProjWeb.png" alt="ProjWeb" class="projectSize"></a>
                     <h5>Web design project for the bootcamp.<br>The website was designed and created to provide <br> visitors with information about the cafe and ways to connect.<br>HTML, CSS and JavaScript were used.</h5>
                 </article>
-                <article>
+                <article class="hidden">
                     <h4>Rick & Morty<br>Calculator</h4><br>
                     <a href="calculator.html">
                     <img src="imagesPortfolio/ProjCalc.png" alt="project calculator" class="projectSize"></a>
                     <h5>A javascript project.<br>This fun calculator performs advanced <br> arithmetic operations with numbers.<br>It was built with HTML & CSS.</h5>
                 </article>
-                <article>
+                <article class="hidden2">
                     <h4>Debug<br>Click Game</h4><br>
                     <a href="game.html"><img src="imagesPortfolio/ProjDebug.png" alt="ProjDebug" class="projectSize"></a>
                     <h5>A JavaScript assignment.<br>It is for entertainment purposes <br>inviting you to 'squash pesky bugs'.<br>It was built using the languages HTML, CSS and JavaScript.</h5>
                 </article>
-                <article>
+                <article class="hidden">
                     <h4>Board Games Library<br>Python project</h4><br>
                     <a href="pyproject.html"><img src="imagesPortfolio/pyProjectImg.png" alt="Pyproject" class="projectSize"></a>
                     <h5>A task demonstrating C.R.U.D. functionality.<br>The library manages data within a software application.<br>Python was used to implement this project.</h5>
@@ -140,9 +142,9 @@
         </section>
 
 
-        <section class="hidden" id="cvSection">
+        <section id="cvSection">
             <h2>My CV</h2>
-            <a href="Konstantinos Kos Konstantinidis CV.pdf" download="Kos_Konstantinidis_CV"  id="myCV"><button id="buttonCV">
+            <a href="Konstantinos Kos Konstantinidis CV.pdf" download="Kos_Konstantinidis_CV"  id="myCV"><button id="buttonCV" class="hidden">
             <b>Download Now</b></a></button>
         </section>
     </main>

@@ -56,7 +56,7 @@ hidden2Elements.forEach((el) => observer2.observe(el));
 
 
 
-// ------------------------------    ----------------------------------
+// ------------------------------ button scroll up   ----------------------------------
 
 let mybutton = document.getElementById("myBtn");
 
@@ -73,6 +73,8 @@ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+};
+
+// ----------------------------------------------------
