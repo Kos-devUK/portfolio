@@ -10,18 +10,17 @@
     text-align: center;
     font-family: 'Bai Jamjuree', sans-serif;
 }
-#articleList{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
-.libraryimages {
-    width: 150px;
-    height: 150px;
-    box-shadow: 0px 0px 2px 2px rgb(15, 163, 177);
-    margin-bottom: 35px;
-    margin-top: 8px;
+
+/* ---------------- search box and button --------------- */
+#box{
+    margin-bottom: 2%;
 }
 
 #submitButton {
@@ -30,6 +29,10 @@
     height: 40px;
     font-size: 16px;
     margin-left: 1;
+    border: none;
+    cursor:  pointer;
+    color: rgb(13, 50, 159);
+    background-color: rgb(254, 119, 77) ;
 }
 
 #searchBox {
@@ -37,174 +40,49 @@
     height: 30px;
 }
 
+/* ------------------ display & hover properties ------------------------- */
+
+#articleList{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px; /* Adjust the max-width as needed */
+    justify-content: space-between;
+    margin: 0 auto; 
+}
+#articleList article{
+    flex-basis: calc(34% - 50px); /* Adjust spacing as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    max-width: 100%;
+}
+
+.libraryimages {
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px 0px 2px 2px rgb(13, 50, 159);
+    max-width: 100%;
+
+}
+
 .searchTitle {
     margin: 40px;
     margin-top: 1px;
     max-width: 170px;
+    margin: -1vh;
 }
 
-html,body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-#box{
-    margin-bottom: 2%;
-}
-/* board games hover styling */
-#ddsi {
-    display: none;
+.dropDownText{
+    opacity: 0;
     position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    padding: 2px 6px;
+    color: rgb(6, 45, 164);;
+    width: auto;
+    padding: 2px 2px;
 }
 
-#si:hover #ddsi {
-    display: block;
+.topText{
+    margin: 5vh;
+    margin-bottom: 2vh;
 }
+.searchTitle:hover .dropDownText{
+    opacity: 1;
 
-#ddctn {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#ctn:hover #ddctn {
-    display: block;
-}
-
-#ddskull {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#skull:hover #ddskull {
-    display: block;
-}
-
-#ddmnpl {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#mnpl:hover #ddmnpl {
-    display: block;
-}
-
-#ddrr {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#rr:hover #ddrr {
-    display: block;
-}
-
-#dduno {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#uno:hover #dduno {
-    display: block;
-}
-
-#ddsagra {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#sagra:hover #ddsagra {
-    display: block;
-}
-
-#ddts {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#ts:hover #ddts {
-    display: block;
-}
-
-#ddhq {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#hq:hover #ddhq {
-    display: block;
-}
-
-#ddcld {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#cld:hover #ddcld {
-    display: block;
-}
-
-#ddscr {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#scr:hover #ddscr {
-    display: block;
-}
-
-#ddek {
-    display: none;
-    position: relative;
-    color: black;
-    background-color: rgb(255, 82, 27);
-    min-width: 160px;
-    padding: 2px 6px;
-}
-
-#ek:hover #ddek {
-    display: block;
 }

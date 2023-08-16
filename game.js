@@ -15,8 +15,6 @@ let btn9 = document.getElementById("btn9");
 let btn10 = document.getElementById("btn10");
 let btn11 = document.getElementById("btn11");
 let btn12 = document.getElementById("btn12");
-let btn13 = document.getElementById("btn13");
-
 
 
 checkBtn.addEventListener('click', () => {
@@ -73,13 +71,6 @@ btn11.addEventListener('click', () => {
 })
 btn12.addEventListener('click', () => {
     btn12.style.display = "none";
-        
-})
-
-btn13.addEventListener('click', () => {
-    score--
-    countBugs.innerHTML = [`oups! that was a ladybug -1 `];
-    btn13.style.display = "none";
         
 })
 

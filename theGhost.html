@@ -8,20 +8,30 @@
     <title>theghost</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="theGhost.css">
-
 </head>
 
 <body>
     <header>
-        <nav>
-            <li><a href="library.html" target="_blank">Our Library</a></li>
-            <li><a href="survey.html" target="mywindow">Survey</a></li>
-            <li><a href="mailto:ContactUs@theghost">Email Us</a></li>
-        </nav>
-        <img src="images/logo.jpg" class="logo">
-        <h1 id="ghosttext">The Ghost</h1>
-        <h2>Board Games Cafe</h2>
+        <article>
+            <img src="images/logo.jpg" class="logo">
+        </article>
+
+        <article>
+            <h1 id="ghosttext">The Ghost</h1>
+            <h2>Board Games Cafe</h2>
+        </article>
+        
+        <article id="dropdownMenu">
+            <button id="ddButton">| | |</button>
+            <article id="ddItems">
+            <a href="library.html" target="_blank">Our Library</a>
+            <a href="survey.html" target="mywindow">Survey</a>
+            <a href="mailto:ContactUs@theghost">Email Us</a>
+            </article>
+        </article>
+
     </header>
+
     <img src="images/bgames.jpg" id="bgfoto">
     <main>
         <article>
@@ -31,7 +41,8 @@
             <p>A refurbished WWII bunker with 20 tables. <br>Offers excellent Microbrewry Craft Beer. <br> Healthy
                 Snacks from our sustainable farm. <br> GF and VEG friendly menu. </p>
         </article>
-        <article id="infotext">
+
+        <article id="ourStory">
             <article>
                 <h2>Opening hours <br>last order 30min before closing</h2>
                 <p>
@@ -50,6 +61,8 @@
                 </p>
             </article>
         </article>
+
+
         <article id="price">
             <article>
                 <h2>Prices <br>card only</h2>
@@ -65,6 +78,7 @@
                     Gathering Table <br> <b>£60</b> p/y Catan Table </p>
             </article>
         </article>
+
         <article id="catanhead">
             <h2>Catan <br>the most popular board game</h2>
             <p>Previously known as The Settlers of Catan, is a multiplayer board game designed by
@@ -73,16 +87,18 @@
                 to build and develop holdings while trading and acquiring resources. <br> Players gain victory points as
                 their settlements grow and the first to reach a set number of victory points, typically 10, wins.</p>
         </article>
+
         <article id="catan">
             <article id="catanrules">
-                <h3>how to play in 4 minutes</h3>
+                <h3 class="ctnText">How to play in 4 minutes</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4fUa_ZJ7beM"></iframe>
             </article>
             <article id="catansoundtrack">
-                <h3>our catan soundtrack</h3>
+                <h3 class="ctnText">Soundtrack</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/OhSVCaD0NzQ"></iframe>
             </article>
         </article>
+
         <article id="mapbox">
             <h2>Find us on Google Maps</h2>
             <iframe
@@ -92,6 +108,8 @@
             <h3>2nd Floor, Saint Clare House, 30-33 Minories, London EC3N 1DD</h3>
         </article>
     </main>
+
+
     <footer>
         <article id="foottopbar">
             <h4>Reservation</h4>
@@ -99,15 +117,18 @@
             <h4>About</h4>
             <h4>FAQ</h4>
         </article>
+
         <article>
             <hr>
             <img id="livingwage" src="images/living-wage-logo.svg" alt="living-wage-logo">
         </article>
+
         <article id="footbottombar">
             <h5>©2023 London</h5>
-            <h5><a href="#Kos-dev.co.uk" target="_blank">Website by Kos-dev</a></h5>
+            <h5><a href="http://kos-dev.co.uk" target="blank">Website by Kos-dev</a></h5>
         </article>
     </footer>
+
 </body>
 
 </html>

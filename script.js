@@ -54,8 +54,6 @@ hidden2Elements.forEach((el) => observer2.observe(el));
 
 
 
-
-
 // ------------------------------ button scroll up   ----------------------------------
 
 let mybutton = document.getElementById("myBtn");
@@ -76,5 +74,3 @@ function topFunction() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 };
-
-// ----------------------------------------------------
