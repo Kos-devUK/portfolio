@@ -725,30 +725,69 @@ body.dark {
 }
 
 /* -------------- CV -------------------- */
+.btn {
+    width: 140px;
+    height: 50px;
+    background: linear-gradient(to top,#6827b0, #ff0081);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    font-family:'Inconsolata', monospace ;
+}
+
+.btn span {
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+}
+
+.btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+    top: -100%;
+}
+
+.btn:hover .btn-text-two {
+    top: 50%;
+}
+
+
+
+
+.dark .btn{
+    box-shadow: 0 0 21px 2px rgb(221, 215, 215);
+}
 
 #myCV:link {
     text-decoration: none;
     color: rgba(34, 46, 80, 1); 
 }
 
-#buttonCV{
-    border: none;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 0 21px 2px rgb(87, 104, 104);
-    border-radius: 60% 5% 50% 5%/ 75% 75% 75% 75%;
-    font-family:'Inconsolata';
-    background: linear-gradient(5deg,#6827b0, #ff0081);
-    color: antiquewhite;
-    font-size: 18px;
-}
 #cvSection{
     margin-top: 2.5%;
     margin-bottom: 7.5%;
-}
-
-.dark #buttonCV{
-    box-shadow: 0 0 21px 2px rgb(221, 215, 215);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /* --------------------Footer!!--------------- */
